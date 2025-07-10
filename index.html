@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Singh's Café Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Bona+Nova+SC:wght@400;600&family=Playfair+Display:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Bona Nova SC', sans-serif;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      background: #f0f8ff;
+      color: #2c3e50;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #3498db;
+      padding: 15px 10px;
+      text-align: center;
+    }
+
+    header img {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+    }
+
+    header h1 {
+      margin-top: 10px;
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      color: white;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #2980b9;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 8px;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      margin: 4px 8px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    section {
+      padding: 15px;
+      margin: 10px;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .price {
+      color: #3498db;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+
+      header h1 {
+        font-size: 22px;
+      }
+
+      nav a {
+        font-size: 13px;
+        padding: 6px 10px;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="sin.png" alt="Singh's Café Logo" />
+    <h1>Singh's Café</h1>
+  </header>
+
+  <nav>
+    <a href="#coffee">☕ Coffee</a>
+    <a href="#tea">🍵 Tea</a>
+    <a href="#flavoured-milk">🥛 Flavoured Milk</a>
+    <a href="#cold-beverages">🧊 Cold Beverages</a>
+    <a href="#snacks">🍟 Snacks</a>
+    <a href="#maggie">🍜 Maggie</a>
+    <a href="#refreshers">🧃 Refreshers</a>
+    <a href="#specials">🌟 Specials</a>
+  </nav>
+
+  <section id="coffee">
+    <h2>☕ Coffee</h2>
+    <ul>
+      <li>Singh's coffee <span class="price">₹20</span></li>
+      <li>Jaggery coffee <span class="price">₹25</span></li>
+      <li>Black coffee <span class="price">₹25</span></li>
+      <li>Chocolate coffee <span class="price">₹50</span></li>
+    </ul>
+  </section>
+
+  <section id="tea">
+    <h2>🍵 Tea</h2>
+    <ul>
+      <li>Classic tea <span class="price">₹15/20</span></li>
+      <li>Jaggery tea <span class="price">₹20</span></li>
+      <li>Masala tea <span class="price">₹20</span></li>
+      <li>Lemon tea <span class="price">₹20</span></li>
+      <li>Lemon ginger <span class="price">₹30</span></li>
+      <li>Moringa tea <span class="price">₹40</span></li>
+    </ul>
+  </section>
+
+  <section id="flavoured-milk">
+    <h2>🥛 Flavoured Milk</h2>
+    <ul>
+      <li>Boost <span class="price">₹25</span></li>
+      <li>Horlicks <span class="price">₹25</span></li>
+      <li>Badam milk <span class="price">₹25</span></li>
+      <li>Cardamom tea <span class="price">₹25</span></li>
+      <li>Golden milk <span class="price">₹20</span></li>
+      <li>Plain milk <span class="price">₹20</span></li>
+    </ul>
+  </section>
+
+  <section id="cold-beverages">
+    <h2>🧊 Cold Beverages</h2>
+    <ul>
+      <li>Cold coffee <span class="price">₹60</span></li>
+      <li>Chocolate cold coffee <span class="price">₹70</span></li>
+      <li>Rosa milk <span class="price">₹40/60</span></li>
+      <li>Pista milk <span class="price">₹40/60</span></li>
+      <li>Kesar badam <span class="price">₹40</span></li>
+      <li>Lemon ice tea <span class="price">₹50</span></li>
+      <li>Peach ice tea <span class="price">₹50</span></li>
+    </ul>
+  </section>
+
+  <section id="snacks">
+    <h2>🍟 Snacks</h2>
+    <ul>
+      <li>Salted fries <span class="price">₹60</span></li>
+      <li>Masala fries <span class="price">₹70</span></li>
+      <li>Cheesy fries <span class="price">₹80</span></li>
+      <li>Punjabi fries <span class="price">₹80</span></li>
+      <li>Veggie fingers <span class="price">₹60</span></li>
+    </ul>
+  </section>
+
+  <section id="maggie">
+    <h2>🍜 Maggie</h2>
+    <ul>
+      <li>Classic maggie <span class="price">₹50</span></li>
+      <li>Veggie delight maggie <span class="price">₹60</span></li>
+      <li>Onion tomato maggie <span class="price">₹70</span></li>
+      <li>Cheesy maggie <span class="price">₹80</span></li>
+      <li>Chilly cheese maggie <span class="price">₹80</span></li>
+    </ul>
+  </section>
+
+  <section id="refreshers">
+    <h2>🧃 Refreshers</h2>
+    <ul>
+      <li>Virgin mojito <span class="price">₹60</span></li>
+      <li>Blue lemonade <span class="price">₹70</span></li>
+      <li>Lemon mint <span class="price">₹70</span></li>
+      <li>Green apple <span class="price">₹40</span></li>
+    </ul>
+  </section>
+
+  <section id="specials">
+    <h2>🌟 Specials</h2>
+    <ul>
+      <li>Special tea <span class="price">₹30</span></li>
+      <li>Hot chocolate <span class="price">₹30</span></li>
+      <li>Chocolate coffee <span class="price">₹60</span></li>
+      <li>Hibiscus tea <span class="price">₹40</span></li>
+      <li>Blue tea <span class="price">₹40</span></li>
+      <li>Moringa tea <span class="price">₹40</span></li>
+    </ul>
+  </section>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  <script>
+  document.addEventListener("contextmenu", e => e.preventDefault());
+  document.addEventListener("keydown", e => {
+    if (e.key === "F12" || 
+       (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) ||
+       (e.ctrlKey && e.key === 'U')) {
+      e.preventDefault();
+    }
+  });
+</script>
+
+</body>
+</html>
